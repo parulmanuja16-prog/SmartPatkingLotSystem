@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
 
 import java.util.List;
@@ -31,6 +32,9 @@ import com.airtribe.SmartParkingLotSystem.repository.VehicleRepository;
  * check-out operations for the parking lot.
  */
 public class ParkingLotService {
+
+    private static final DateTimeFormatter TICKET_TIME_FORMATTER =
+            DateTimeFormatter.ofPattern("dd/MM/yy HH:mm:ss");
 
     ParkingFloorRepository parkingFloorRepository;
     ParkingTicketRepository parkingTicketRepository;
@@ -123,8 +127,10 @@ public class ParkingLotService {
       
         ParkingTicketDTO dto = new ParkingTicketDTO();
         dto.setTicketId(ticket.getTicketId());
-        dto.setEntryTime(ticket.getEntryTime());
-        dto.setExitTime(ticket.getExitTime());
+        dto.setEntryTime(ticket.getEntryTime().format(TICKET_TIME_FORMATTER));
+        dto.setExitTime(ticket.getExitTime() == null
+            ? null
+            : ticket.getExitTime().format(TICKET_TIME_FORMATTER));
         dto.setSpotNumber(ticket.getSpot().getParkingId());
         dto.setFee(ticket.getFee());
         dto.setVehicle(ticket.getVehicle());

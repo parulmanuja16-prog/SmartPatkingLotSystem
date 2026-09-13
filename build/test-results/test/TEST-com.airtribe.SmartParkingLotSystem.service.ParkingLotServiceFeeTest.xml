@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2026-09-13T17:53:14.746Z" hostname="LAPTOP-DG0L7551" time="0.35">
+  <properties/>
+  <testcase name="-1 minutes for MOTORCYCLE costs 15.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.071"/>
+  <testcase name="0 minutes for MOTORCYCLE costs 15.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.004"/>
+  <testcase name="1 minutes for MOTORCYCLE costs 15.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.002"/>
+  <testcase name="59 minutes for MOTORCYCLE costs 15.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.002"/>
+  <testcase name="60 minutes for MOTORCYCLE costs 15.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.004"/>
+  <testcase name="61 minutes for MOTORCYCLE costs 30.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.002"/>
+  <testcase name="119 minutes for MOTORCYCLE costs 30.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.003"/>
+  <testcase name="120 minutes for MOTORCYCLE costs 30.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.001"/>
+  <testcase name="121 minutes for MOTORCYCLE costs 45.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.002"/>
+  <testcase name="1440 minutes for MOTORCYCLE costs 360.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.003"/>
+  <testcase name="0 minutes for CAR costs 20.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.004"/>
+  <testcase name="61 minutes for CAR costs 40.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.003"/>
+  <testcase name="120 minutes for CAR costs 40.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.003"/>
+  <testcase name="121 minutes for CAR costs 60.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.004"/>
+  <testcase name="0 minutes for BUS costs 50.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.002"/>
+  <testcase name="61 minutes for BUS costs 100.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.003"/>
+  <testcase name="120 minutes for BUS costs 100.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.001"/>
+  <testcase name="121 minutes for BUS costs 150.0" classname="com.airtribe.SmartParkingLotSystem.service.ParkingLotServiceFeeTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

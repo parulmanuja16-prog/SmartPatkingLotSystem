@@ -1,7 +1,5 @@
 package com.airtribe.SmartParkingLotSystem.dto;
 
-import java.time.LocalDateTime;
-
 import com.airtribe.SmartParkingLotSystem.entity.Vehicle;
 
 
@@ -12,8 +10,8 @@ public class ParkingTicketDTO {
     private Long ticketId;
     private Vehicle vehicle;
     private String spotNumber;
-    private LocalDateTime entryTime;
-    private LocalDateTime exitTime;
+    private String entryTime;
+    private String exitTime;
     private Double fee;
 
     
@@ -29,12 +27,12 @@ public class ParkingTicketDTO {
      * @param ticketId ticket identifier
      * @param vehicle vehicle associated with the ticket
      * @param spotNumber assigned parking spot identifier
-     * @param entryTime vehicle entry time
-     * @param exitTime vehicle exit time, or {@code null} while active
+    * @param entryTime formatted vehicle entry time
+    * @param exitTime formatted vehicle exit time, or {@code null} while active
      * @param fee parking fee, or {@code null} while active
      */
-    public ParkingTicketDTO(Long ticketId, Vehicle vehicle, String spotNumber, LocalDateTime entryTime,
-            LocalDateTime exitTime, Double fee) {
+        public ParkingTicketDTO(Long ticketId, Vehicle vehicle, String spotNumber, String entryTime,
+            String exitTime, Double fee) {
         this.ticketId = ticketId;
         this.vehicle = vehicle;
         this.spotNumber = spotNumber;
@@ -84,27 +82,27 @@ public class ParkingTicketDTO {
     /**
      * @return vehicle entry time
      */
-    public LocalDateTime getEntryTime() {
+    public String getEntryTime() {
         return entryTime;
     }
 
     /**
-     * @param entryTime vehicle entry time to assign
+    * @param entryTime formatted vehicle entry time to assign
      */
-    public void setEntryTime(LocalDateTime entryTime) {
+    public void setEntryTime(String entryTime) {
         this.entryTime = entryTime;
     }
     /**
      * @return vehicle exit time, or {@code null} while active
      */
-    public LocalDateTime getExitTime() {
+    public String getExitTime() {
         return exitTime;
     }
 
     /**
-     * @param exitTime vehicle exit time to assign
+    * @param exitTime formatted vehicle exit time to assign
      */
-    public void setExitTime(LocalDateTime exitTime) {
+    public void setExitTime(String exitTime) {
         this.exitTime = exitTime;
     }
     /**
