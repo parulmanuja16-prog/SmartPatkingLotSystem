@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 import com.airtribe.SmartParkingLotSystem.entity.ParkingFloor;
 import com.airtribe.SmartParkingLotSystem.entity.ParkingSpot;
-import com.airtribe.SmartParkingLotSystem.entity.SpotSize;
+import com.airtribe.SmartParkingLotSystem.enums.SpotSize;
 import com.airtribe.SmartParkingLotSystem.repository.ParkingFloorRepository;
 
 @Component

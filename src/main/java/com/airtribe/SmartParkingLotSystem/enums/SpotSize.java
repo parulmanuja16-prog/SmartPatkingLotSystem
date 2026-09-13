@@ -1,4 +1,4 @@
-package com.airtribe.SmartParkingLotSystem.entity;
+package com.airtribe.SmartParkingLotSystem.enums;
 
 /**
  * Parking spot size categories and their relative capacities.

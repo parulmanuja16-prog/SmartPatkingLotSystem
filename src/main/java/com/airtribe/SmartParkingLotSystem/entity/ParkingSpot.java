@@ -10,6 +10,7 @@ import jakarta.persistence.OneToOne;
 
 import org.hibernate.annotations.GenericGenerator;
 
+import com.airtribe.SmartParkingLotSystem.enums.SpotSize;
 import com.airtribe.SmartParkingLotSystem.generator.ParkingIdGenerator;
 
 /**

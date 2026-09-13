@@ -19,7 +19,7 @@ import com.airtribe.SmartParkingLotSystem.dto.ParkingTicketDTO;
 import com.airtribe.SmartParkingLotSystem.entity.ParkingSpot;
 import com.airtribe.SmartParkingLotSystem.entity.ParkingTicket;
 import com.airtribe.SmartParkingLotSystem.entity.Vehicle;
-import com.airtribe.SmartParkingLotSystem.entity.VehicleType;
+import com.airtribe.SmartParkingLotSystem.enums.VehicleType;
 import com.airtribe.SmartParkingLotSystem.exception.ParkingException;
 import com.airtribe.SmartParkingLotSystem.repository.ParkingFloorRepository;
 import com.airtribe.SmartParkingLotSystem.repository.ParkingSpotRepository;

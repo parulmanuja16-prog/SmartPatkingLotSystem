@@ -1,6 +1,6 @@
 package com.airtribe.SmartParkingLotSystem.dto;
 
-import com.airtribe.SmartParkingLotSystem.entity.SpotSize;
+import com.airtribe.SmartParkingLotSystem.enums.SpotSize;
 
 /**
  * Immutable data transfer object describing the availability of a parking
